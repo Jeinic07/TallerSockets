@@ -31,18 +31,18 @@ class Cliente implements Runnable {
         
                      // Mostrar lista de preguntas
                      System.out.println("Lista de preguntas:");
-                     System.out.println("1. ¡Hola!");
-                     System.out.println("2. ¿Cuál es tu nombre?");
-                     System.out.println("3. ¿Cuál es tu color favorito?");
-                     System.out.println("4. ¿Qué tiempo hace hoy?");
-                     System.out.println("5. Cuéntame un chiste.");
-                     System.out.println("6. ¿Cuál es el sentido de la vida?");
-                     System.out.println("7. ¿Puedes bailar?");
-                     System.out.println("8. ¿Qué opinas sobre los gatos?");
-                     System.out.println("9. ¿Puedes cantar una canción?");
-                     System.out.println("10. ¿Cómo estás hoy?");
+                     System.out.println("1. Hola!");
+                     System.out.println("2. Cual es tu nombre?");
+                     System.out.println("3. Cual es tu color favorito?");
+                     System.out.println("4. Que tiempo hace hoy?");
+                     System.out.println("5. Cuentame un chiste.");
+                     System.out.println("6. Cual es el sentido de la vida?");
+                     System.out.println("7. Puedes bailar?");
+                     System.out.println("8. Que opinas sobre los gatos?");
+                     System.out.println("9. Puedes cantar una cancion?");
+                     System.out.println("10. Como estas hoy?");
                      System.out.println("11. Salir");
-                     System.out.print("Selecciona una opción: ");
+                     System.out.print("Selecciona una opcion: ");
                      
                    
             	
