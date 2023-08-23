@@ -3,10 +3,11 @@ package co.edu.unbosque.general;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.Socket;
 import java.util.Scanner;
 
-class Cliente implements Runnable {
+class Cliente implements Runnable  {
 
     private int puerto = 5000;
     
@@ -59,7 +60,12 @@ class Cliente implements Runnable {
                 // Leer mensaje del usuario
                 
                 String mensajeUsuario = scanner.nextLine();
-
+                
+                if(mensajeUsuario.equalsIgnoreCase("salir")) {
+                	 System.out.println("Cerrando cliente...");
+                     break;
+                	
+                }
                 // Enviar mensaje al servidor
                 out.writeUTF(mensajeUsuario);
 
