@@ -57,15 +57,6 @@ class Servidor implements Runnable {
 				out.writeUTF(respuesta);
 
 			
-				System.out.println("\nCliente desconectado\n");
-
-				if (mensaje.equalsIgnoreCase("21")) {
-					sc.close(); 
-					servidorActivo = false;
-			        System.out.println("Cerrando servidor...");
-			        System.exit(0);
-					break;// Rompe el ciclo si el servidor debe desconectarse
-				}
 			}
 
 			System.out.println("Servidor desconectado");
@@ -136,16 +127,16 @@ class Servidor implements Runnable {
 		case "20": {
 			return respuestas.get(20).toString();
 		}
-		case "21":{
+		case "21": {
 			servidorActivo = false; // Cambia la bandera para desconectar el servidor
 			return respuestas.get(21).toString();
 		}
-		default:{
-			
-			return  respuestas.get(0).toString();
+		default: {
+
+			return respuestas.get(0).toString();
 		}
-			
-		}	
-		
+
+		}
+
 	}
 }
