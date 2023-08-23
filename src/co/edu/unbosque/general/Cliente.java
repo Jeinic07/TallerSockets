@@ -44,14 +44,14 @@ class Cliente implements Runnable  {
                      System.out.println("10. Como estas hoy?");
                      System.out.println("11. Kanye West o Taylor Swift?");
                      System.out.println("12. Halo o Gears of war?");
-                     System.out.println("13. ");
-                     System.out.println("14.");
-                     System.out.println("15.");
-                     System.out.println("16");
-                     System.out.println("17.");
-                     System.out.println("18.");
-                     System.out.println("19.");
-                     System.out.println("20.");
+                     System.out.println("13. Red velvet o Tres leches");
+                     System.out.println("14. El maiz es un almidon?");
+                     System.out.println("15. Java o PHP?");
+                     System.out.println("16. Cuál es el nombre cientifico de el yarumo?");
+                     System.out.println("17. Nombre dela azucar de la leche");
+                     System.out.println("18. Cuál es el mejor album de Radiohead?");
+                     System.out.println("19. De que está compuesta la maltosa?");
+                     System.out.println("20. Para que sirve el terpeno?");
                      System.out.println("21. Salir\n");
                  
                      

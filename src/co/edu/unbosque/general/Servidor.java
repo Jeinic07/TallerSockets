@@ -63,6 +63,7 @@ class Servidor implements Runnable {
 					sc.close(); 
 					servidorActivo = false;
 			        System.out.println("Cerrando servidor...");
+			        System.exit(0);
 					break;// Rompe el ciclo si el servidor debe desconectarse
 				}
 			}
