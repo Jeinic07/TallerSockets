@@ -56,11 +56,14 @@ class Servidor implements Runnable {
 				String respuesta = procesarPregunta(mensaje);
 				out.writeUTF(respuesta);
 
-				sc.close();
+			
 				System.out.println("\nCliente desconectado\n");
 
-				if (!servidorActivo) {
-					break; // Rompe el ciclo si el servidor debe desconectarse
+				if (mensaje.equalsIgnoreCase("21")) {
+					sc.close(); 
+					servidorActivo = false;
+			        System.out.println("Cerrando servidor...");
+					break;// Rompe el ciclo si el servidor debe desconectarse
 				}
 			}
 
