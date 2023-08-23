@@ -30,7 +30,7 @@ class Cliente implements Runnable {
             while (true) {
         
                      // Mostrar lista de preguntas
-                     System.out.println("Lista de preguntas:");
+                     System.out.println("Lista de preguntas:\n");
                      System.out.println("1. Hola!");
                      System.out.println("2. Cual es tu nombre?");
                      System.out.println("3. Cual es tu color favorito?");
@@ -41,8 +41,18 @@ class Cliente implements Runnable {
                      System.out.println("8. Que opinas sobre los gatos?");
                      System.out.println("9. Puedes cantar una cancion?");
                      System.out.println("10. Como estas hoy?");
-                     System.out.println("11. Salir");
-                     System.out.print("Selecciona una opcion: ");
+                     System.out.println("11. Kanye West o Taylor Swift?");
+                     System.out.println("12. Halo o Gears of war?");
+                     System.out.println("13. ");
+                     System.out.println("14.");
+                     System.out.println("15.");
+                     System.out.println("16");
+                     System.out.println("17.");
+                     System.out.println("18.");
+                     System.out.println("19.");
+                     System.out.println("20.");
+                     System.out.println("21. Salir\n");
+                 
                      
                    
             	
@@ -55,7 +65,7 @@ class Cliente implements Runnable {
 
                 // Recibir y mostrar respuesta del servidor
                 String respuesta = in.readUTF();
-                System.out.println("Bot: " + respuesta);
+                System.out.println("\nBot: " + respuesta+ "\n");
             }
         } catch (IOException ex) {
             ex.printStackTrace();
